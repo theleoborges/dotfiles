@@ -3,8 +3,9 @@ export PATH=$PATH:/opt/local/bin
 export PATH=$PATH:/usr/local/mysql/bin
 export PATH=$PATH:/usr/local/scala/bin
 export PATH=$PATH:/usr/local/scala/bin
+export PATH=$PATH:/usr/local/git/bin
 export EDITOR=mate
-if [[ -s /Users/lborges/.rvm/scripts/rvm ]] ; then source /Users/lborges/.rvm/scripts/rvm ; fi
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 set -o vi
 
