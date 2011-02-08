@@ -23,3 +23,6 @@ alias gco='git checkout '
 alias gpom='git push origin master'
 alias gphm='git push heroku master'
 alias gdm='git diff | mate'
+
+#Client Work
+alias cuke="cucumber --tags ~@paypal --tags ~@securepay --tags ~@javascript"
