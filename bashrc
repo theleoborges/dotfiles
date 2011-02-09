@@ -4,7 +4,10 @@ export PATH=$PATH:/usr/local/mysql/bin
 export PATH=$PATH:/usr/local/scala/bin
 export PATH=$PATH:/usr/local/scala/bin
 export PATH=$PATH:/usr/local/git/bin
+export PATH=$PATH:/Library/PostgreSQL/9.0/bin
 export EDITOR=mate
+export ARCHFLAGS='-arch x86_64'
+
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 set -o vi
