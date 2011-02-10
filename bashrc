@@ -28,4 +28,4 @@ alias gphm='git push heroku master'
 alias gdm='git diff | mate'
 
 #Client Work
-alias cuke="cucumber --tags ~@paypal --tags ~@securepay --tags ~@javascript"
+alias hudson="ssh -i ~/.ssh/getup_singapore_prod ubuntu@ci.getup.org.au"
