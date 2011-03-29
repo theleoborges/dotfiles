@@ -1,5 +1,6 @@
 # IntelliJ, RubyMine
 .idea/
+out/
 
 # Rails files
 .bundle
