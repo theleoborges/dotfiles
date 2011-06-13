@@ -30,3 +30,10 @@ alias gpo='git push origin'
 alias gpom='git push origin master'
 alias gphm='git push heroku master'
 alias gdm='git diff | mate'
+
+
+# Put current Git branch in the terminal
+parse_git_branch() {
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+}
+export PS1="\[\033[00m\]\u@\h\[\033[01;34m\] \W \[\033[31m\]\$(parse_git_branch) \[\033[00m\]$\[\033[00m\] "
