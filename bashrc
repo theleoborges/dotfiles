@@ -10,7 +10,6 @@ export ARCHFLAGS='-arch x86_64'
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
-set -o vi
 
 # Rails aliases
 alias rc='rails console'
