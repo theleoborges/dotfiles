@@ -1,5 +1,5 @@
 ;; slime config
-(add-to-list 'load-path "~/hacking/lisp/slime/")  ; your SLIME directory
+(add-to-list 'load-path "~/.emacs.d/lisp/slime/")  ; your SLIME directory
 ;;(setq inferior-lisp-program "/opt/local/bin/sbcl") ; your Lisp system
 (require 'slime)
 (slime-setup)
@@ -10,8 +10,21 @@
 (add-to-list 'package-archives
 	          '("marmalade" . "http://marmalade-repo.org/packages/"))
 (package-initialize)
-(setq inferior-lisp-program "cake repl") ; your Lisp system
+;;(setq inferior-lisp-program "cake repl") ; your Lisp system
+(setq inferior-lisp-program "lein repl") ; your Lisp system
 (setq lisp-indent-offset 2) ; reduce identation length. It's huge by default
+
+(defun duplicate-line ()
+  (interactive)
+  (move-beginning-of-line 1)
+  (kill-line)
+  (yank)
+  (open-line 1)
+  (next-line 1)
+  (yank))
+
+;;custom key bindings
+(global-set-key "\C-C\C-D" 'duplicate-line)
 
 ;;encoding
 (set-terminal-coding-system 'utf-8)
@@ -23,16 +36,17 @@
 
 
 ;;syntax highlighting
-(add-to-list 'load-path "~/hacking/lisp/color-theme/")
-(add-to-list 'load-path "~/hacking/lisp/color-theme/emacs-color-theme-solarized/")
+(add-to-list 'load-path "~/.emacs.d/lisp/color-theme/")
+(add-to-list 'load-path "~/.emacs.d/lisp/color-theme/emacs-color-theme-solarized/")
 
 ;; color theme
 (require 'color-theme)
 (require 'color-theme-solarized)
 (color-theme-initialize)
-(load-file "~/hacking/lisp/custom-themes/pastels-on-dark-theme.el")
-(load-file "~/hacking/lisp/custom-themes/color-theme-blackboard.el")
-;;(color-theme-pastels-on-dark)
+(load-file "~/.emacs.d/lisp/custom-themes/pastels-on-dark-theme.el")
+(load-file "~/.emacs.d/lisp/custom-themes/color-theme-blackboard.el")
+;(color-theme-pastels-on-dark)
+(color-theme-charcoal-black)
 
 ;;rails inferior mode
 ;;(add-to-list 'load-path (expand-file-name "~/.emacs.d/rails-minor-mode"))

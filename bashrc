@@ -29,7 +29,7 @@ alias gpo='git push origin'
 alias gpom='git push origin master'
 alias gphm='git push heroku master'
 alias gdm='git diff | mate'
-
+alias gsci='git show --pretty="format:" --name-only'
 
 # Put current Git branch in the terminal
 parse_git_branch() {
