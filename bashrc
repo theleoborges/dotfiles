@@ -17,6 +17,7 @@ alias rg='rails generate'
 alias rs='rails server'
 alias rrollback='rake db:rollback RAILS_ENV=test && rake db:rollback'
 alias rmigrate='rake db:migrate RAILS_ENV=test && rake db:migrate'
+alias be='bundle exec'
 
 
 # Git Aliases
