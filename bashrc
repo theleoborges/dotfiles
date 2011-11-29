@@ -1,10 +1,4 @@
-export PATH=$PATH:/Users/lborges/dev-softs/ant-1.8.0/bin
-export PATH=$PATH:/opt/local/bin
-export PATH=$PATH:/usr/local/mysql/bin
-export PATH=$PATH:/usr/local/scala/bin
-export PATH=$PATH:/usr/local/scala/bin
-export PATH=$PATH:/usr/local/git/bin
-export PATH=$PATH:/Library/PostgreSQL/9.0/bin
+export PATH=/usr/local/bin:$PATH
 export EDITOR=mate
 export ARCHFLAGS='-arch x86_64'
 
