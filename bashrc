@@ -25,6 +25,7 @@ alias gpom='git push origin master'
 alias gphm='git push heroku master'
 alias gdm='git diff | mate'
 alias gsci='git show --pretty="format:" --name-only'
+alias gclean="git clean -f -d"
 
 # Put current Git branch in the terminal
 parse_git_branch() {
