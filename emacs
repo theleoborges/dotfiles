@@ -14,6 +14,14 @@
 (setq inferior-lisp-program "lein repl") ; your Lisp system
 (setq lisp-indent-offset 2) ; reduce identation length. It's huge by default
 
+;;paredit
+(add-to-list 'load-path "~/.emacs.d/list/paredit.el")
+(autoload 'paredit-mode "paredit"
+      "Minor mode for pseudo-structurally editing Lisp code." t)	
+(add-hook 'lisp-mode-hook             (lambda () (paredit-mode +1)))
+(add-hook 'scheme-mode-hook           (lambda () (paredit-mode +1)))
+(add-hook 'clojure-mode-hook           (lambda () (paredit-mode +1)))
+
 (defun duplicate-line ()
   (interactive)
   (move-beginning-of-line 1)
@@ -23,8 +31,24 @@
   (next-line 1)
   (yank))
 
+(defun rename-file-and-buffer (new-name)
+  "Renames both current buffer and file it's visiting to NEW-NAME."
+  (interactive "sNew name: ")
+  (let ((name (buffer-name))
+    (filename (buffer-file-name)))
+    (if (not filename)
+    (message "Buffer '%s' is not visiting a file!" name)
+      (if (get-buffer new-name)
+      (message "A buffer named '%s' already exists!" new-name)
+    (progn
+      (rename-file name new-name 1)
+      (rename-buffer new-name)
+      (set-visited-file-name new-name)
+      (set-buffer-modified-p nil))))))
+
 ;;custom key bindings
 (global-set-key "\C-C\C-D" 'duplicate-line)
+(global-set-key "\C-C\C-N" 'rename-file-and-buffer)
 
 ;;encoding
 (set-terminal-coding-system 'utf-8)
