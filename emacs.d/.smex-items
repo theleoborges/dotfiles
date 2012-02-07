@@ -1,0 +1,24 @@
+
+;; ----- smex-history -----
+(
+ inferior-lisp
+ comment-or-uncomment-region
+ color-theme-select
+ load-file
+ package-install
+ enable-theme
+ describe-variable
+)
+
+;; ----- smex-data -----
+(
+ (package-install . 3)
+ (describe-variable . 2)
+ (inferior-lisp . 26)
+ (load-file . 23)
+ (enable-theme . 2)
+ (color-theme-solarized-light . 1)
+ (color-theme-solarized-dark . 1)
+ (comment-or-uncomment-region . 3)
+ (color-theme-select . 1)
+)
