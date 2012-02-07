@@ -1,3 +1,8 @@
+# Emacs
+emacs.d/auto-save-list/
+emacs.d/backups/
+*.el~
+
 # IntelliJ, RubyMine
 .idea/
 out/
