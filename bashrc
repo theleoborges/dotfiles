@@ -27,6 +27,8 @@ alias gdm='git diff | mate'
 alias gsci='git show --pretty="format:" --name-only'
 alias gclean="git clean -f -d"
 alias gpr="git pull --rebase"
+alias gdf="git diff"
+alias gdc="git diff --cached"
 
 # Put current Git branch in the terminal
 parse_git_branch() {

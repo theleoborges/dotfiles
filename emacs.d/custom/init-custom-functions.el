@@ -23,6 +23,21 @@
       (set-visited-file-name new-name)
       (set-buffer-modified-p nil))))))
 
+(defun extract-local-variable (var-name)
+  (interactive "sVar Name: ")
+  (let ((code (delete-and-extract-region (region-beginning)
+                                         (region-end))))
+    (insert var-name)
+    (newline)
+    (beginning-of-line)
+    (previous-line)
+    (setq start  (point))
+    (insert var-name
+            " = " code)
+    (indent-region start (point))
+    (insert "\n")
+    ))
+
 ;;custom key bindings
 (global-set-key "\C-C\C-D" 'duplicate-line)
 (global-set-key "\C-C\C-N" 'rename-file-and-buffer)

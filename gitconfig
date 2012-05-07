@@ -3,3 +3,8 @@
 	email = leonardoborges.rj@gmail.com
 [github]
 	user = leonardoborges
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto

@@ -2,23 +2,34 @@
 ;; ----- smex-history -----
 (
  inferior-lisp
- comment-or-uncomment-region
- color-theme-select
- load-file
+ make-directory
  package-install
- enable-theme
- describe-variable
+ ispell
+ load-file
+ end-of-line
+ comment-or-uncomment-region
 )
 
 ;; ----- smex-data -----
 (
- (package-install . 3)
+ (package-install . 4)
  (describe-variable . 2)
- (inferior-lisp . 26)
- (load-file . 23)
+ (inferior-lisp . 43)
+ (load-file . 36)
  (enable-theme . 2)
  (color-theme-solarized-light . 1)
  (color-theme-solarized-dark . 1)
- (comment-or-uncomment-region . 3)
+ (comment-or-uncomment-region . 6)
  (color-theme-select . 1)
+ (make-directory . 3)
+ (extract-local-variable . 16)
+ (newline . 3)
+ (beginning-of-line . 1)
+ (previous-line . 1)
+ (goto-char . 1)
+ (replace-regexp . 1)
+ (indent-region . 1)
+ (end-of-line . 1)
+ (markdown-mode . 3)
+ (ispell . 1)
 )
