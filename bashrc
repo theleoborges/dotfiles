@@ -1,4 +1,6 @@
 export PATH=/usr/local/bin:$PATH
+export PATH=~/frameworks/android-sdk-macosx/tools:$PATH
+
 export EDITOR=mate
 export ARCHFLAGS='-arch x86_64'
 
@@ -29,6 +31,11 @@ alias gclean="git clean -f -d"
 alias gpr="git pull --rebase"
 alias gdf="git diff"
 alias gdc="git diff --cached"
+alias glg="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
+
+
+#List zombie processes
+alias zombies="ps -el | grep 'Z'"
 
 # Put current Git branch in the terminal
 parse_git_branch() {

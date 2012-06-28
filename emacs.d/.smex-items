@@ -1,27 +1,27 @@
 
 ;; ----- smex-history -----
 (
- inferior-lisp
- make-directory
+ clojure-jack-in
  package-install
- ispell
- load-file
- end-of-line
+ make-directory
+ rename-buffer
+ rename-file
  comment-or-uncomment-region
+ inferior-lisp
 )
 
 ;; ----- smex-data -----
 (
- (package-install . 4)
+ (package-install . 5)
  (describe-variable . 2)
- (inferior-lisp . 43)
+ (inferior-lisp . 52)
  (load-file . 36)
  (enable-theme . 2)
  (color-theme-solarized-light . 1)
  (color-theme-solarized-dark . 1)
- (comment-or-uncomment-region . 6)
+ (comment-or-uncomment-region . 11)
  (color-theme-select . 1)
- (make-directory . 3)
+ (make-directory . 7)
  (extract-local-variable . 16)
  (newline . 3)
  (beginning-of-line . 1)
@@ -32,4 +32,11 @@
  (end-of-line . 1)
  (markdown-mode . 3)
  (ispell . 1)
+ (butterfly . 1)
+ (clojure-jack-in . 2)
+ (slime-connect . 28)
+ (slime-repl . 1)
+ (rename-file . 1)
+ (rename-buffer . 2)
+ (slime-repl-clear-buffer . 2)
 )
