@@ -1,7 +1,7 @@
 export PATH=/usr/local/bin:$PATH
 export PATH=~/frameworks/android-sdk-macosx/tools:$PATH
 
-export EDITOR=mate
+export EDITOR=subl
 export ARCHFLAGS='-arch x86_64'
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
