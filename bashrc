@@ -3,6 +3,9 @@ export PATH=~/frameworks/android-sdk-macosx/tools:$PATH
 export PATH=~/frameworks/android-sdk-macosx/platform-tools:$PATH
 export PATH=~/bin:$PATH
 export PATH=~/storm/bin:$PATH
+export PATH=/Applications/Emacs.app/Contents/MacOS/bin:$PATH
+export PATH=~/frameworks/scala-latest/bin:$PATH
+export PATH=/usr/local/share/npm/bin:$PATH
 
 export EDITOR=subl
 export ARCHFLAGS='-arch x86_64'
@@ -42,12 +45,19 @@ function gitCommitHistorySearch() {
 }
 
 
+# Emacs aliases
+alias emacs='open -a /Applications/Emacs.app $1'
+alias ec='emacsclient -c $1'
+
 # Blog aliases
 alias blog='cd ~/projects/ruby/octopress'
 alias drafts='$EDITOR ~/projects/ruby/octopress/source/_drafts'
 
 #List zombie processes
 alias zombies="ps -el | grep 'Z'"
+
+#Check if port in use
+alias portinuse='sudo lsof -i :$1'
 
 # Put current Git branch in the terminal
 parse_git_branch() {
@@ -65,3 +75,7 @@ export SENCHA_CMD_3_0_0="/Users/lborges/bin/Sencha/Cmd/3.0.0.250"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+export PATH=/usr/local/share/npm/bin:$PATH
+
+### GPG key management
+eval $(gpg-agent --daemon)

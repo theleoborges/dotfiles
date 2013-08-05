@@ -8,6 +8,15 @@
   (next-line 1)
   (yank))
 
+
+(defun paredit-duplicate-custom ()
+  (interactive)
+  (paredit-kill)
+  (yank)
+  (yank)
+  (backward-char)
+  (paredit-backward-up))
+
 (defun rename-file-and-buffer (new-name)
   "Renames both current buffer and file it's visiting to NEW-NAME."
   (interactive "sNew name: ")
@@ -23,23 +32,10 @@
       (set-visited-file-name new-name)
       (set-buffer-modified-p nil))))))
 
-(defun extract-local-variable (var-name)
-  (interactive "sVar Name: ")
-  (let ((code (delete-and-extract-region (region-beginning)
-                                         (region-end))))
-    (insert var-name)
-    (newline)
-    (beginning-of-line)
-    (previous-line)
-    (setq start  (point))
-    (insert var-name
-            " = " code)
-    (indent-region start (point))
-    (insert "\n")
-    ))
-
 ;;custom key bindings
-(global-set-key "\C-C\C-D" 'duplicate-line)
+(global-set-key (kbd "C-c d") 'duplicate-line)
+(global-set-key (kbd "C-c D")   'paredit-duplicate-custom)
+
 (global-set-key "\C-C\C-N" 'rename-file-and-buffer)
 (add-hook 'ruby-mode-hook
 	  (lambda ()

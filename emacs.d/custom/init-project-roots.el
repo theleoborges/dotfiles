@@ -7,6 +7,10 @@
          :root-contains-files ("project.clj")
          ;;:filename-regex ,(regexify-ext-list '(clj jsp css js xml html))
          )
+        ("Grunt projects"
+         :root-contains-files ("Gruntfile.js")
+         ;;:filename-regex ,(regexify-ext-list '(clj jsp css js xml html))
+         )
         ("Rails Project"
          :root-contains-files ("app" "config" "db" "lib" "script")
          :exclude-paths '("log"))

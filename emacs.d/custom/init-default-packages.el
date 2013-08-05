@@ -16,7 +16,8 @@
                       starter-kit-js
                       clojure-mode
                       markdown-mode
-                      color-theme)
+                      ;;color-theme
+                      )
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p my-packages)
