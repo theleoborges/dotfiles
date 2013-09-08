@@ -3,6 +3,7 @@
 (load "init-project-roots")
 (load "init-ido-customizations")
 (load "init-custom-functions")
+(load "init-clojure-customizations")
 
 ;;UTF-8 Stuff
 (set-language-environment "UTF-8")
