@@ -10,8 +10,9 @@ export PATH=/usr/local/share/npm/bin:$PATH
 export EDITOR=subl
 export ARCHFLAGS='-arch x86_64'
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-
+# rbenv
+export RBENV_ROOT=/usr/local/var/rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # Rails aliases
 alias rc='rails console'
@@ -67,11 +68,6 @@ export PS1="\[\033[00m\]\u@\h\[\033[01;34m\] \W \[\033[31m\]\$(parse_git_branch)
 
 # Prevents long prompts from garbling reverse searches
 export TERM=xterm
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
-export PATH=/Users/lborges/bin/Sencha/Cmd/3.0.0.250:$PATH
-
-export SENCHA_CMD_3_0_0="/Users/lborges/bin/Sencha/Cmd/3.0.0.250"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
