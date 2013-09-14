@@ -5,7 +5,6 @@ emacs.d/backups/
 emacs.d/.project-roots
 emacs.d/.smex-items
 emacs.d/places
-emacs.d/elpa
 
 # IntelliJ, RubyMine
 .idea/
