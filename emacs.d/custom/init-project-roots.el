@@ -3,7 +3,7 @@
 (require 'project-root)
 (setq project-roots
       `(
-        ("Clojure project"
+        ("Clojure projects"
          :root-contains-files ("project.clj")
          ;;:filename-regex ,(regexify-ext-list '(clj jsp css js xml html))
          )
@@ -11,15 +11,18 @@
          :root-contains-files ("Gruntfile.js")
          ;;:filename-regex ,(regexify-ext-list '(clj jsp css js xml html))
          )
-        ("Rails Project"
+        ("Rails Projects"
          :root-contains-files ("app" "config" "db" "lib" "script")
          :exclude-paths '("log"))
-        ("Generic Project"
-         :root-contains-files ("root"))
+        ("Git Projects"
+         :root-contains-files (".git"))
+        ("Generic Projects"
+         :root-contains-files ("root"))        
         ))
       
 
-(global-set-key (kbd "C-c p f") 'project-root-find-file)
+;;(global-set-key (kbd "C-c p f") 'project-root-find-file)
+(global-set-key (kbd "C-c p f") 'my-ido-project-files)
 (global-set-key (kbd "C-c p g") 'project-root-grep)
 (global-set-key (kbd "C-c p a") 'project-root-ack)
 (global-set-key (kbd "C-c p d") 'project-root-goto-root)
@@ -31,3 +34,6 @@
                   (with-project-root
                       (ansi-term (getenv "SHELL")
                                  (concat (car project-details) "-shell")))))
+
+(custom-set-variables
+     '(haskell-mode-hook '(turn-on-haskell-indentation)))

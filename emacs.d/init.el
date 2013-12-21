@@ -11,7 +11,7 @@
 
 ;;Ruby/Rails
 (add-to-list 'load-path "~/.emacs.d/rhtml/")
-(require 'rhtml-mode)
+;;(require 'rhtml-mode)
 
 ;;Customizations
 (setq inhibit-startup-message t)        ; Do without annoying startup msg.
@@ -25,8 +25,8 @@
 (add-hook 'ruby-mode-hook       'esk-paredit-nonlisp)
 
 ;;Color themes
-(add-to-list 'load-path "/Users/lborges/.emacs.d/themes/emacs-color-theme-solarized/")
-(require 'color-theme-solarized)
+;;(add-to-list 'load-path "/Users/lborges/.emacs.d/themes/emacs-color-theme-solarized/")
+;;(require 'color-theme-solarized)
 ;;(color-theme-solarized-dark)
 (color-theme-monokai)
 
@@ -41,7 +41,8 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-safe-themes (quote ("d24e10524bb50385f7631400950ba488fa45560afcadd21e6e03c2f5d0fad194" default)))
+ '(custom-safe-themes (quote ("dd4db38519d2ad7eb9e2f30bc03fba61a7af49a185edfd44e020aa5345e3dca7" "d24e10524bb50385f7631400950ba488fa45560afcadd21e6e03c2f5d0fad194" default)))
+ '(haskell-mode-hook (quote (turn-on-haskell-indentation)))
  '(inferior-lisp-program "lein repl")
  '(js-indent-level 4))
 (custom-set-faces

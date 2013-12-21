@@ -7,7 +7,7 @@
   (open-line 1)
   (next-line 1)
   (yank))
-
+(global-set-key (kbd "C-c d") 'duplicate-line)
 
 (defun paredit-duplicate-custom ()
   (interactive)
@@ -16,6 +16,7 @@
   (yank)
   (backward-char)
   (paredit-backward-up))
+(global-set-key (kbd "C-c D")   'paredit-duplicate-custom)
 
 (defun rename-file-and-buffer (new-name)
   "Renames both current buffer and file it's visiting to NEW-NAME."
@@ -31,12 +32,19 @@
       (rename-buffer new-name)
       (set-visited-file-name new-name)
       (set-buffer-modified-p nil))))))
+(global-set-key "\C-C\C-N" 'rename-file-and-buffer)
+
+(defun fonts-big ()
+  (interactive)
+  (text-scale-adjust 4))
+(define-key global-map [f7] 'fonts-big)
+
+(defun fonts-normal ()
+  (interactive)
+  (text-scale-adjust 0))
+(define-key global-map [f8] 'fonts-normal)
 
 ;;custom key bindings
-(global-set-key (kbd "C-c d") 'duplicate-line)
-(global-set-key (kbd "C-c D")   'paredit-duplicate-custom)
-
-(global-set-key "\C-C\C-N" 'rename-file-and-buffer)
 (add-hook 'ruby-mode-hook
 	  (lambda ()
 	    (define-key ruby-mode-map
