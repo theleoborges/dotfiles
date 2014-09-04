@@ -1,14 +1,22 @@
 export PATH=/usr/local/bin:$PATH
-export PATH=~/frameworks/android-sdk-macosx/tools:$PATH
-export PATH=~/frameworks/android-sdk-macosx/platform-tools:$PATH
+export PATH=~/libraries/android-sdk-macosx/tools:$PATH
+export PATH=~/libraries/android-sdk-macosx/platform-tools:$PATH
+export PATH=~/libraries/apache-ant-1.9.4/bin/:$PATH
+
 export PATH=~/bin:$PATH
 export PATH=~/storm/bin:$PATH
 export PATH=/Applications/Emacs.app/Contents/MacOS/bin:$PATH
 export PATH=~/frameworks/scala-latest/bin:$PATH
 export PATH=/usr/local/share/npm/bin:$PATH
+export PATH=~/.cabal/bin:$PATH
+
 
 export EDITOR=subl
 export ARCHFLAGS='-arch x86_64'
+
+# scala stuff
+export SBT_OPTS="-XX:MaxPermSize=256M -Xmx1500M"
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_60.jdk/Contents/Home
 
 # rbenv
 export RBENV_ROOT=/usr/local/var/rbenv
@@ -46,13 +54,24 @@ function gitCommitHistorySearch() {
 }
 
 
+
 # Emacs aliases
+export ALTERNATE_EDITOR=""
+export EDITOR=emacsclient
 alias emacs='open -a /Applications/Emacs.app $1'
+alias ed='/Applications/Emacs.app/Contents/MacOS/Emacs --daemon'
+alias edk="emacsclient -e '(kill-emacs)'"
+# attach to running daemon
 alias ec='emacsclient -c $1'
+# attach to running daemon, but in the terminal
+alias et='emacsclient -nw $1'
 
 # Blog aliases
 alias blog='cd ~/projects/ruby/octopress'
 alias drafts='$EDITOR ~/projects/ruby/octopress/source/_drafts'
+
+# Bash aliases
+alias ls='ls -G'
 
 #List zombie processes
 alias zombies="ps -el | grep 'Z'"
