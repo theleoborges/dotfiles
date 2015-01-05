@@ -387,6 +387,8 @@
 
 	)) items)))
 
+(debug-on-entry 'ensime-search-make-results)
+
 
 (defun ensime-search-update-target-buffer ()
   "This is where the magic happens. Update the result list."
@@ -455,4 +457,3 @@
 ;; Local Variables:
 ;; no-byte-compile: t
 ;; End:
-

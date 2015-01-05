@@ -155,6 +155,7 @@
       (define-key ensime-mode-map (kbd "C-c C-r") 'ensime-inf-eval-region)
       (define-key ensime-mode-map (kbd "C-x C-e") 'ensime-inf-eval-definition)
       (define-key ensime-mode-map (kbd "C-c C-l") 'ensime-inf-load-file)
+      (define-key ensime-mode-map (kbd "C-c C-b i") 'ensime-import-type-at-point)
       )))
 
 
@@ -174,3 +175,5 @@
 ;;    '(("no_proxy" . "^\\(localhost\\|10.*\\)")
 ;;      ("http" . "127.0.0.1:3128")
 ;;      ("https" . "127.0.0.1:3128")))
+
+(setq debug-on-error t)
