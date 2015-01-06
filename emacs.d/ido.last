@@ -1,0 +1,35 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Users/lborges/.live-packs/" . "lborges-pack/")
+ ("/Users/lborges/" . ".live-packs/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/lborges/.live-packs/lborges-pack/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "init.el"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/lborges/.live-packs/lborges-pack/" (21675 5522 0 0) "README.md" "lib/" "init.el" "info.el" "config/" "../" "./")
+
+ ("/Users/lborges/.live-packs/" (21675 5522 0 0) "lborges-pack/" "../" "./")
+
+ ("/Users/lborges/.emacs.d/" (21675 19558 0 0) "url/" "tmp/" "README.md" "projectile-bookmarks.eld" "packs/" "manifest.el" "LICENSE.txt" "lib/" "installer/" "init.el" "etc/" "CHANGELOG.md" ".gitmodules" ".gitignore" "../" "./")
+
+ ("/Users/lborges/" (21675 19418 0 0) "Public/" "projects/" "Pictures/" "Music/" "Movies/" "Library/" "Dropbox/" "Downloads/" "Documents/" "Desktop/" "bin/" "Applications/" ".Trash/" ".ssh/" ".live-packs/" ".lein/" ".gitignore" ".gitconfig" ".gemrc" ".emacs.d/" ".DS_Store" ".dropbox/" ".CFUserTextEncoding" ".bashrc" ".bash_profile" ".bash_history" "../" "./")
+
+ ("/Users/lborges/projects/" (21675 5501 0 0) "dotfiles/" "../" "./")
+
+ ("/Users/lborges/projects/dotfiles/" (21675 19594 0 0) "live-packs/" "install.rb" "gitignore" "gitconfig" "gemrc" "emacs.d/" "bashrc" "bash_profile" ".gitignore" ".git/" ".DS_Store" ".#gemrc" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

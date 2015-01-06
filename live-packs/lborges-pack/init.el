@@ -86,13 +86,13 @@
 (setq ffip-find-options "-not -regex \".*node_modules.*\"")
 
 ;; SLIME
-(live-add-pack-lib "slime")
-(require 'slime-autoloads)
-(eval-after-load 'js2-mode
-  '((lambda ()
-      (define-key js2-mode-map (kbd "C-c C-l") 'slime-eval-buffer)
-      (define-key js2-mode-map (kbd "C-c C-r") 'slime-eval-region)
-      (setq ffip-patterns (cons "*.json" ffip-patterns)))))
+;; (live-add-pack-lib "slime")
+;; (require 'slime-autoloads)
+;; (eval-after-load 'js2-mode
+;;   '((lambda ()
+;;       (define-key js2-mode-map (kbd "C-c C-l") 'slime-eval-buffer)
+;;       (define-key js2-mode-map (kbd "C-c C-r") 'slime-eval-region)
+;;       (setq ffip-patterns (cons "*.json" ffip-patterns)))))
 
 ;; Faster buffer navigation
 (eval-after-load 'paredit
