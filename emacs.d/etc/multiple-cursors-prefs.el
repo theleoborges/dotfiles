@@ -3,6 +3,7 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+        c-electric-slash
         cua-copy-region
         cua-cut-region
         cua-delete-region
@@ -10,7 +11,9 @@
         forward-sentence
         haskell-mode-contextual-space
         kill-region
+        live-paredit-delete-horizontal-space
         live-paredit-forward-kill-sexp
+        paredit-backward-down
         paredit-backward-kill-word
         paredit-doublequote
         paredit-forward-barf-sexp

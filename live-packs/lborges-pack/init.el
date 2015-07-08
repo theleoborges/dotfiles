@@ -94,10 +94,20 @@
 ;;       (define-key js2-mode-map (kbd "C-c C-r") 'slime-eval-region)
 ;;       (setq ffip-patterns (cons "*.json" ffip-patterns)))))
 
+(setq js-indent-level 4)
+(setq js2-basic-offset 4)
+(setq js2-bounce-indent-p false)
+
 ;; Faster buffer navigation
 (eval-after-load 'paredit
     '(dolist (key '("M-<up>" "M-<down>" "M-<right>" "M-<left>"))
        (define-key paredit-mode-map (read-kbd-macro key) nil)))
+(eval-after-load 'paredit
+  '((lambda ()
+      (define-key paredit-mode-map (kbd "C-x )") 'paredit-close-round-and-newline)
+      (define-key paredit-mode-map (kbd "C-M-k") 'kill-sexp)
+      )))
+
 (global-set-key (kbd "M-<left>")  'windmove-left)
 (global-set-key (kbd "M-<right>") 'windmove-right)
 (global-set-key (kbd "M-<up>")    'windmove-up)
@@ -118,6 +128,22 @@
 (global-set-key (kbd "C-<")     'mc/mark-previous-like-this)
 (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
 
+;; hs-minor-mode
+(add-hook 'emacs-lisp-mode-hook 'hs-minor-mode)
+(add-hook 'java-mode-hook       'hs-minor-mode)
+(add-hook 'lisp-mode-hook       'hs-minor-mode)
+(add-hook 'clojure-mode-hook    'hs-minor-mode)
+
+(setq hs-show-all-p t)
+(defun hs-mode-toggle-show-all ()
+  (interactive)
+  (if hs-show-all-p
+    (hs-hide-all)
+    (hs-show-all))
+  (setq hs-show-all-p (not hs-show-all-p)))
+
+(global-set-key (kbd "C-.")     'hs-toggle-hiding)
+(global-set-key (kbd "C-c C-.") 'hs-mode-toggle-show-all)
 
 
 ;; Emacs server
@@ -177,3 +203,19 @@
 ;;      ("https" . "127.0.0.1:3128")))
 
 (setq debug-on-error t)
+
+
+;; neotree
+(require 'neotree)
+(global-set-key [f8] 'neotree-toggle)
+(global-set-key [f9] 'neotree-dir)
+(setq projectile-switch-project-action 'neotree-projectile-action)
+
+
+;; minibuffer
+(lookup-key minibuffer-local-filename-must-match-map (kbd "<right>"))
+(lookup-key minibuffer-local-filename-completion-map (kbd "<right>"))
+(lookup-key (current-global-map) (kbd "<right>"))
+
+(define-key minibuffer-local-completion-map (kbd "C-n") 'cycle-mini-next-completion)
+(define-key minibuffer-local-completion-map (kbd "C-p") 'cycle-mini-previous-completion)

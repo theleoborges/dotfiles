@@ -2,33 +2,342 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/Users/lborges-atls/projects/dotfiles/live-packs/lborges-pack/" . "lib/")
+ ("/Users/lborges-atls/.live-packs/lborges-pack/lib/elpa/" . "minibuffer-complete-cycle-20130813.945/")
+ ("/Users/lborges-atls/.live-packs/lborges-pack/lib/" . "elpa/")
+ ("/Users/" . "lborges-atls/")
+ ("/Users/lborges-atls/projects/wikidocs-examples/" . "javascript/")
+ ("/Users/lborges-atls/projects/projecty/node_modules/react-ace/" . "src/")
+ ("/Users/lborges-atls/projects/projecty/node_modules/" . "react-ace/")
+ ("/Users/lborges-atls/projects/projecty/src/components/" . "Video/")
+ ("/Users/lborges-atls/projects/projecty/src/" . "api/")
+ ("/Users/lborges-atls/projects/projecty/" . "node_modules/")
+ ("/Users/lborges-atls/projects/tenacity/test/" . "tenacity/")
+ ("/Users/lborges-atls/projects/tenacity/src/" . "tenacity/")
+ ("/Users/lborges-atls/projects/tenacity/" . "test/")
+ ("/Users/lborges-atls/projects/package.elm-lang.org/" . "dist/")
+ ("/Users/lborges-atls/elm/package.elm-lang.org/packages/elm-lang/core/" . "2.0.1/")
+ ("/Users/lborges-atls/elm/package.elm-lang.org/packages/elm-lang/" . "core/")
+ ("/Users/lborges-atls/elm/package.elm-lang.org/packages/" . "elm-lang/")
+ ("/Users/lborges-atls/elm/package.elm-lang.org/" . "packages/")
+ ("/Users/lborges-atls/projects/transporter/checkouts/" . "ginga/")
+ ("/Users/lborges-atls/projects/reza/checkouts/" . "ginga/")
+ ("/Users/lborges-atls/.live-packs/lborges-pack/" . "lib/")
+ ("/Users/lborges-atls/.live-packs/" . "lborges-pack/")
+ ("/Users/lborges-atls/projects/transporter/src/transporter/" . "ring/")
+ ("/Users/lborges-atls/projects/transporter/resources/" . "public/")
+ ("/Users/lborges-atls/projects/transporter/src/" . "transporter/")
+ ("/Users/lborges-atls/projects/transporter/" . "checkouts/")
+ ("/Users/lborges-atls/projects/reza/test/integration/reza/" . "querydsl/")
+ ("/Users/lborges-atls/projects/reza/test/integration/" . "reza/")
+ ("/Users/lborges-atls/projects/reza/test/" . "integration/")
+ ("/Users/lborges-atls/projects/reza/checkouts/ginga/test/" . "ginga/")
+ ("/Users/lborges-atls/projects/reza/checkouts/ginga/src/ginga/" . "async/")
+ ("/Users/lborges-atls/projects/reza/checkouts/ginga/src/" . "ginga/")
+ ("/Users/lborges-atls/projects/reza/checkouts/ginga/" . "test/")
+ ("/Users/lborges-atls/projects/reza/resources/public/js/closurified/" . "reza/")
+ ("/Users/lborges-atls/projects/reza/resources/public/js/" . "reza/")
+ ("/Users/lborges-atls/" . ".live-packs/")
+ ("/Users/lborges-atls/projects/ClojureReactiveProgramming/code/chapter02/rx-playground/src/" . "rx_playground/")
+ ("/Users/lborges-atls/projects/ClojureReactiveProgramming/code/chapter02/rx-playground/" . "src/")
+ ("/Users/lborges-atls/projects/reza/target/test-cljs/" . "reza/")
+ ("/Users/lborges-atls/projects/shipitXXX/" . "projectX/")
+ ("/Users/lborges-atls/projects/" . "reza/")
+ ("/Users/lborges-atls/projects/shipitXXX/projectX/project-x/" . "routes/")
+ ("/Users/lborges-atls/projects/shipitXXX/projectX/project-x/public/js/" . "lib/")
+ ("/Users/lborges-atls/projects/shipitXXX/projectX/project-x/public/stylesheets/lib/" . "wd-presence/")
+ ("/Users/lborges-atls/projects/shipitXXX/projectX/project-x/public/stylesheets/" . "lib/")
+ ("/Users/lborges-atls/projects/shipitXXX/projectX/project-x/public/images/lib/" . "wd-presence/")
+ ("/Users/lborges-atls/projects/shipitXXX/projectX/project-x/public/images/" . "lib/")
+ ("/Users/lborges-atls/projects/shipitXXX/projectX/project-x/public/" . "stylesheets/")
+ ("/Users/lborges-atls/projects/shipitXXX/projectX/wd-presence/www/" . "lib/")
+ ("/Users/lborges-atls/projects/shipitXXX/projectX/wd-presence/resources/" . "public/")
+ ("/Users/lborges-atls/projects/shipitXXX/projectX/wd-presence/src/" . "wd_presence/")
+ ("/Users/lborges-atls/projects/shipitXXX/projectX/wd-presence/" . "www/")
+ ("/Users/lborges-atls/projects/shipitXXX/projectX/" . "wd-presence/")
+ ("/Users/lborges-atls/projects/reza/src-cljx/reza/" . "operation/")
+ ("/Users/lborges-atls/projects/reza/src-cljx/" . "reza/")
+ ("/Users/lborges-atls/projects/reza/src/" . "reza/")
+ ("/Users/lborges-atls/projects/reza/resources/public/" . "js/")
+ ("/Users/lborges-atls/projects/reza/resources/" . "public/")
+ ("/Users/lborges-atls/projects/reza/target/generated/clj/reza/" . "operation/")
+ ("/Users/lborges-atls/projects/reza/target/generated/clj/" . "reza/")
+ ("/Users/lborges-atls/projects/reza/target/generated/" . "clj/")
+ ("/Users/lborges-atls/projects/reza/target/" . "test-cljs/")
+ ("/Users/lborges-atls/projects/reza/" . "checkouts/")
  ("/Users/lborges/.live-packs/" . "lborges-pack/")
  ("/Users/lborges/" . ".live-packs/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
- "/Users/lborges/.live-packs/lborges-pack/"
+ "/Users/lborges-atls/projects/dotfiles/live-packs/lborges-pack/lib/"
+ "/Users/lborges-atls/.live-packs/lborges-pack/lib/elpa/minibuffer-complete-cycle-20130813.945/"
+ "/Users/lborges-atls/projects/poco/"
+ "/Users/lborges-atls/projects/reza/test/reza/"
+ "/Users/lborges-atls/projects/aleph-test/"
+ "/Users/lborges-atls/projects/reza/src/reza/querydsl/"
+ "/Users/lborges-atls/.live-packs/lborges-pack/"
+ "/Users/lborges-atls/"
+ "/Users/lborges-atls/projects/wikidocs-examples/javascript/"
+ "/Users/lborges-atls/projects/projecty/src/components/Video/"
+ "/Users/lborges-atls/projects/reza/"
+ "/Users/lborges-atls/projects/projecty/node_modules/react-ace/src/"
+ "/Users/lborges-atls/projects/projecty/node_modules/react-ace/"
+ "/Users/lborges-atls/projects/projecty/src/components/TextBox/"
+ "/Users/lborges-atls/projects/projecty/src/api/"
+ "/Users/lborges-atls/projects/tenacity/test/tenacity/"
+ "/Users/lborges-atls/projects/tenacity/src/tenacity/"
+ "/Users/lborges-atls/projects/package.elm-lang.org/dist/"
+ "/Users/lborges-atls/projects/package.elm-lang.org/backend/"
+ "/Users/lborges-atls/elm/package.elm-lang.org/packages/elm-lang/core/2.0.1/"
+ "/Users/lborges-atls/package.elm-lang.org/packages/elm-lang/core/2.0.1/"
+ "/Users/lborges-atls/projects/transporter/resources/public/"
+ "/Users/lborges-atls/projects/transporter/src/transporter/queue/"
+ "~/projects/transporter/src/transporter/queue/"
+ "/Users/lborges-atls/projects/transporter/src/transporter/"
+ "/Users/lborges-atls/projects/transporter/checkouts/ginga/"
+ "/Users/lborges-atls/projects/reza/checkouts/ginga/"
+ "/Users/lborges-atls/projects/dotfiles/live-packs/lborges-pack/"
+ "/Users/lborges-atls/.live-packs/lborges-pack/config/"
+ "/Users/lborges-atls/projects/transporter/"
+ "~/projects/transporter/src/transporter/"
+ "~/projects/transporter/src/transporter/ring/middleware/"
+ "~/projects/transporter/"
+ "~/projects/transporter/src/transporter/ring/adapter/"
+ "/Users/lborges-atls/projects/apache-apollo-1.7.1/examples/stomp/java/src/main/java/example/"
+ "/Users/lborges-atls/projects/apache-apollo-1.7.1/examples/stomp/ruby/"
+ "/Users/lborges-atls/projects/reza/test/utils/"
+ "/Users/lborges-atls/projects/reza/checkouts/ginga/test/ginga/"
+ "/Users/lborges-atls/projects/reza/checkouts/ginga/src/ginga/"
+ "/Users/lborges-atls/projects/reza/checkouts/ginga/src/ginga/async/"
+ "/Users/lborges-atls/projects/reza/resources/public/js/closurified/reza/"
+ "/Users/lborges-atls/.emacs.d/"
+ "/Users/lborges-atls/projects/reza/bin/"
+ "/Users/lborges-atls/projects/reza/resources/public/js/"
+ "/Users/lborges-atls/projects/ClojureReactiveProgramming/code/chapter02/rx-playground/src/rx_playground/"
+ "/Users/lborges-atls/projects/reza/test-cljx/circle/"
+ "/Users/lborges-atls/projects/reza/test-cljx/reza/reporters/"
+ "~/projects/cljs-test-out/src/leiningen/cljs_test_out/"
+ "/Users/lborges-atls/projects/reza/target/test-cljs/reza/"
+ "/Users/lborges-atls/projects/shipitXXX/projectX/project-x/routes/"
 )
 
 ;; ----- ido-work-file-list -----
 (
+ "cycle-mini.el"
+ "minibuffer-complete-cycle.el"
+ "minibuffer-complete-cycle-autoloads.el"
+ "config.default.json"
+ "test-check.clj"
+ "out.txt"
+ "jdbc.clj"
  "init.el"
+ "master.txt"
+ "1.txt"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/Users/lborges/.live-packs/lborges-pack/" (21675 5522 0 0) "README.md" "lib/" "init.el" "info.el" "config/" "../" "./")
+ ("/Users/lborges-atls/.m2/repository/aleph/aleph/0.4.0/" (21860 8041 0 0) "aleph-0.4.0.pom.sha1" "aleph-0.4.0.pom" "aleph-0.4.0.jar.sha1" "aleph-0.4.0.jar" "_maven.repositories" "../" "./")
 
- ("/Users/lborges/.live-packs/" (21675 5522 0 0) "lborges-pack/" "../" "./")
+ ("/Users/lborges-atls/projects/dotfiles/live-packs/lborges-pack/lib/" (21676 26626 0 0) "slime/" "multiple-cursors/" "expand-region/" "elpa/" ".gitkeep" "../" "./")
 
- ("/Users/lborges/.emacs.d/" (21675 19558 0 0) "url/" "tmp/" "README.md" "projectile-bookmarks.eld" "packs/" "manifest.el" "LICENSE.txt" "lib/" "installer/" "init.el" "etc/" "CHANGELOG.md" ".gitmodules" ".gitignore" "../" "./")
+ ("/Users/lborges-atls/.live-packs/lborges-pack/lib/elpa/minibuffer-complete-cycle-20130813.945/" (21887 44027 0 0) "minibuffer-complete-cycle.el" "minibuffer-complete-cycle-pkg.elc" "minibuffer-complete-cycle-pkg.el" "minibuffer-complete-cycle-autoloads.el" "../" "./")
 
- ("/Users/lborges/" (21675 19418 0 0) "Public/" "projects/" "Pictures/" "Music/" "Movies/" "Library/" "Dropbox/" "Downloads/" "Documents/" "Desktop/" "bin/" "Applications/" ".Trash/" ".ssh/" ".live-packs/" ".lein/" ".gitignore" ".gitconfig" ".gemrc" ".emacs.d/" ".DS_Store" ".dropbox/" ".CFUserTextEncoding" ".bashrc" ".bash_profile" ".bash_history" "../" "./")
+ ("/Users/lborges-atls/.live-packs/lborges-pack/lib/elpa/" (21887 44018 0 0) "yasnippet-20141223.303/" "scala-mode2-20141105.514/" "sbt-mode-20141110.1116/" "s-20140910.334/" "projectile-20150102.840/" "popup-20141215.349/" "pkg-info-20140610.630/" "org-present-20141109.1756/" "org-20150525.signed" "org-20150525/" "neotree-20150102.427/" "minibuffer-complete-cycle-20130813.945/" "htmlize-20130207.1202/" "haskell-mode-20150101.1151/" "gnupg/" "f-20140828.716/" "epl-20140823.609/" "ensime-20150105.108/" "dash-at-point-20140626.35/" "dash-20141220.1452/" "company-20150102.1526/" "color-theme-solarized-20140408.1309/" "color-theme-20080305.34/" "auto-complete-20141228.633/" "archives/" "ack-and-a-half-1.2.0/" "../" "./")
 
- ("/Users/lborges/projects/" (21675 5501 0 0) "dotfiles/" "../" "./")
+ ("/Users/lborges-atls/.live-packs/lborges-pack/lib/" (21676 26626 0 0) "slime/" "multiple-cursors/" "expand-region/" "elpa/" ".gitkeep" "../" "./")
 
- ("/Users/lborges/projects/dotfiles/" (21675 19594 0 0) "live-packs/" "install.rb" "gitignore" "gitconfig" "gemrc" "emacs.d/" "bashrc" "bash_profile" ".gitignore" ".git/" ".DS_Store" ".#gemrc" "../" "./")
+ ("/Users/lborges-atls/.live-packs/lborges-pack/" (21887 44114 0 0) "README.md" "lib/" "init.el" "info.el" "config/" ".#init.el" "../" "./")
+
+ ("/Users/lborges-atls/" (21881 12162 0 0) "VirtualBox VMs/" "vert.x-2.1.5/" "usefulness-of-types.org" "target/" "sample-preso.tex" "sample-preso.org" "Public/" "projects/" "Pictures/" "pbcopy" "mybroker/" "Music/" "Movies/" "master.txt" "Library/" "elmdocs/" "elm/" "Dropbox/" "Downloads/" "Documents/" "dev.txt" "Desktop/" "data/" "blah.clj.html" "blah.clj" "bin/" "awscli-saml-auth/" "Applications/" ".viminfo" ".vim/" ".vagrant.d/" ".v8flags.3.14.5.9.lborges-atls.json" ".Trash/" ".ssh/" ".smex-items" ".scala_history" ".sbt/" ".psql_history" ".profile" ".npmrc" ".npm/" ".node-gyp/" ".netrc" ".m2/" ".live-packs/" ".lesshst" ".lein/" ".ivy2/" ".ideaLibSources/" ".IdeaIC14/" ".hgignore_global" ".gnupg/" ".gitignore" ".gitconfig" ".ghc/" ".gemrc" ".gem/" ".emacs.d/" ".emacs-live.el" ".elm/" ".DS_Store" ".dropbox/" ".cups/" ".config/" ".CFUserTextEncoding" ".cabal/" ".boot2docker/" ".bashrc" ".bash_profile" ".bash_history" ".anyconnect" ".amethyst" "../" "./")
+
+ ("/Users/lborges-atls/projects/" (21886 28693 0 0) "wikidocs-examples/" "transporter/" "tenacity/" "shipitXXX/" "reza/" "querydsl/" "projecty/" "poco/" "package.elm-lang.org/" "ondemand-password-tools/" "maven-settings/" "lein-test-out-fresh/" "lein-test-out/" "intellij-debugger-test/" "ginga/" "dotfiles/" "core/" "confluence-collaborative-editor-plugin/" "confluence/" "concurrency101/" "ClojureReactiveProgramming/" "cljs-test-out/" "atlassian-connect-training-101/" "apache-apollo-1.7.1-unix-distro.tar" "apache-apollo-1.7.1/" "aleph-test/" ".DS_Store" "../" "./")
+
+ ("/Users/lborges-atls/projects/dotfiles/" (21886 22313 0 0) "live-packs/" "install.rb" "gitignore" "gitconfig" "gemrc" "emacs.d/" "bashrc" "bash_profile" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/lborges-atls/projects/dotfiles/live-packs/lborges-pack/" (21887 44114 0 0) "README.md" "lib/" "init.el" "info.el" "config/" ".#init.el" "../" "./")
+
+ ("/Users/lborges-atls/.m2/repository/org/clojure/test.check/0.6.1/" (21675 44622 0 0) "test.check-0.6.1.pom.sha1" "test.check-0.6.1.pom" "test.check-0.6.1.jar.sha1" "test.check-0.6.1.jar" "_maven.repositories" "../" "./")
+
+ ("/Users/lborges-atls/projects/poco/" (21886 28732 0 0) "views/" "src/" "service.ddev.yaml" "service.adev.yaml" "routes/" "README.md" "public/" "package.json" "models/" "lib/" "gulpfile.js" "Dockerfile" "config.js" "config.default.json" "bin/" "atlassian-editor.config.json" "app.js" ".gitmodules" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/lborges-atls/projects/reza/" (21886 22788 0 0) "test-cljx/" "test/" "target/" "src-java/" "src-dev/" "src-cljx/" "src-cljs/" "src/" "service-descriptor.json" "reza.iml" "reza-micros-0.1.8-dev-8be9207.jar" "reza-micros-0.1.8-dev-10dd480.jar" "resources/" "README.md" "project.clj" "profile-resources/" "Procfile.dev" "Procfile.cljs-tests" "Procfile.cljs-perf-tests" "perf-test/" "package.json" "node_modules/" "lein" "karma.test.conf" "karma.perf-test.conf" "gulpfile.js" "env.example" "docs/" "dev-resources/" "confluence-plugin/" "checkouts/" "CHANGELOG.md" "bin/" ".nrepl-port" ".lein-repl-history" ".lein-failures" ".jshintrc" ".idea/" ".gitmodules" ".gitignore" ".git/" ".env" ".DS_Store" "../" "./")
+
+ ("/Users/lborges-atls/projects/reza/test/reza/" (21886 24333 0 0) "undo_test.clj" "test-check.clj" "sync/" "operation/" "kv_store_test.clj" "integration_test.clj" "history_test.clj" "data_test.clj" "data_buffer_test.clj" "aleph_cluster_test.clj" ".#integration_test.clj" "../" "./")
+
+ ("/Users/lborges-atls/projects/aleph-test/" (21882 26423 0 0) "target/" "src/" "project.clj" "out.txt" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/lborges-atls/projects/aleph-test/src/" (21882 26348 0 0) "aleph_test/" "../" "./")
+
+ ("/Users/lborges-atls/projects/aleph-test/src/aleph_test/" (21882 26348 0 0) "core.clj" "../" "./")
+
+ ("/Users/lborges-atls/projects/reza/src/reza/querydsl/" (21881 10281 0 0) "kv_store.clj" "jdbc.clj" "history_store.clj" "db.clj" "../" "./")
+
+ ("/Users/lborges-atls/projects/confluence-collaborative-editor-plugin/src/main/resources/js/" (21879 43345 0 0) "wd-presence.js" "collaborative-editor.js" "../" "./")
+
+ ("/Users/lborges/" (21868 19952 0 0) "ylj2015/" "week2.R" "VirtualBox VMs/" "tw-projects/" "tmp/" "test.h2.db" "target/" "Sites/" "scripts/" "scald.rb" "Public/" "proposal_proposition_feedback.xlsx" "proposal_category_feedback.xlsx" "projects/" "Pictures/" "pgadmin.log" "package.elm-lang.org/" "oradiag_lborges/" "Music/" "Movies/" "Library/" "libraries/" "leonardoborges.kdb" "exclude.txt" "elmTweets.html" "elm-workshop-ylj2015/" "Dropbox/" "Downloads/" "Documents/" "Desktop/" "cabalstuff/" "bin/" "Applications/" ".viminfo" ".vagrant.d/" ".Trash/" ".subversion/" ".ssh/" ".squirrel-sql/" ".sqldeveloper/" ".smex-items" ".scala_history" ".sbt/" ".rstudio-desktop/" ".RSA/" ".Rhistory" ".recentf" ".RData" ".Rapp.history" ".profile" ".plugman/" ".pip/" ".pgpass" ".pgadmin_histoqueries" ".overtone/" ".npmrc" ".npm/" ".node-gyp/" ".netrc" ".nbprofiler/" ".middleman/" ".m2/" ".local/" ".live-packs/" ".lesshst" ".lein/" ".keybase-installer/" ".keybase/" ".keepassx/" ".karaf/" ".jline-clojure.main.history" ".ivy2/" ".ionic/" ".ido.last" ".ideaLibSources/" ".IdeaIC14/" ".idea-build/" ".httr-oauth" ".hgignore_global" ".heroku/" ".gnupg/" ".gitignore_global" ".gitignore" ".gitconfig" ".ghci" ".ghc/" ".gemrc" ".gem/" ".emacs.d/" ".emacs-live.el" ".elm/" ".DS_Store" ".dropbox/" ".dockercfg" ".cups/" ".cordova/" ".conscript/" ".config/" ".CFUserTextEncoding" ".cache/" ".cabal/" ".bundler/" ".boot2docker/" ".bashrc" ".bash_profile" ".bash_history" ".babushka/" ".atom/" ".anyconnect" ".android/" "../" "./")
+
+ ("/Users/" (21753 19769 0 0) "sysadmin/" "Shared/" "lborges-atls/" "lborges/" "Guest/" ".localized" ".DS_Store" "../" "./")
+
+ ("/Users/lborges-atls/projects/confluence-collaborative-editor-plugin/" (21807 5512 0 0) "target/" "src/" "README.md" "pom.xml" "confluence-collaborative-editor-plugin.iml" ".idea/" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/lborges-atls/projects/confluence-collaborative-editor-plugin/src/" (21685 46557 0 0) "test/" "main/" "../" "./")
+
+ ("/Users/lborges-atls/projects/confluence-collaborative-editor-plugin/src/main/" (21685 46556 0 0) "resources/" "java/" "../" "./")
+
+ ("/Users/lborges-atls/projects/confluence-collaborative-editor-plugin/src/main/resources/" (21799 12632 0 0) "template/" "js/" "images/" "css/" "confluence-collaborative-editor-plugin.properties" "atlassian-plugin.xml" "../" "./")
+
+ ("/Users/lborges-atls/projects/reza/checkouts/ginga/src/ginga/" (21878 32496 0 0) "zip.cljx" "utils.clj" "tree.cljx" "string.cljx" "stack.cljx" "random.clj" "marshal.cljx" "log.cljx" "jwt.clj" "jdbc.clj" "hash.clj" "debug.clj" "datetime.cljx" "core.cljx" "chash.clj" "async.cljx" "async/" "../" "./")
+
+ ("/Users/lborges-atls/projects/shipitXXX/projectX/project-x/bin/" (21752 55503 0 0) "www" "../" "./")
+
+ ("/Users/lborges-atls/projects/shipitXXX/projectX/project-x/" (21753 2179 0 0) "views/" "service.adev.yaml" "routes/" "README.md" "public/" "package.json" "node_modules/" "models/" "lib/" "Dockerfile" "config.js" "config.default.json" "bin/" "app.js" ".gitignore" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/lborges-atls/projects/shipitXXX/projectX/project-x/public/js/lib/" (21752 63828 0 0) "wikidocs.js" "wd-presence.js" "tinymce-ui.js" "jquery.js" "../" "./")
+
+ ("/Users/lborges-atls/projects/shipitXXX/projectX/wd-presence/www/" (21751 45921 0 0) "lib/" "index.html" "app.js" "app/" "../" "./")
+
+ ("/Users/lborges-atls/projects/shipitXXX/projectX/project-x/public/stylesheets/lib/" (21752 11261 0 0) "wd-presence.css" "wd-presence/" "animate.css" "../" "./")
+
+ ("/Users/lborges-atls/projects/shipitXXX/projectX/project-x/public/stylesheets/" (21753 1095 0 0) "vendor/" "tinymce.css" "reza.css" "pace.css" "lib/" "editor.css" "../" "./")
+
+ ("/Users/lborges-atls/projects/shipitXXX/projectX/project-x/routes/" (21753 1095 0 0) "index.js" "doc.js" "confluence.js" "../" "./")
+
+ ("/Users/lborges-atls/projects/reza/target/test-cljs/reza/" (21872 59383 0 0) "example.cljs" "../" "./")
+
+ ("~/projects/cljs-test-out/src/leiningen/cljs_test_out/" (21788 51305 0 0) "junit-reporter.clj" "../" "./")
+
+ ("/Users/lborges-atls/projects/reza/test-cljx/circle/" (21878 30573 0 0) "karma.cljx" "../" "./")
+
+ ("/Users/lborges-atls/projects/reza/resources/public/js/" (21872 59384 0 0) "vendor/" "reza.min.js.map" "reza.min.js" "reza.js" "reza-dev-simple/" "js-deps.js" "closurified/" "../" "./")
+
+ ("/Users/lborges-atls/projects/reza/bin/" (21878 30573 0 0) "run-reza" "load-test.sh" "load-test.js" "deploy.sh" "deploy-local.sh" "build" "../" "./")
+
+ ("/Users/lborges-atls/.emacs.d/" (21878 29711 0 0) "url/" "tmp/" "README.md" "projectile-bookmarks.eld" "packs/" "manifest.el" "LICENSE.txt" "lib/" "installer/" "init.el" "ido.last" "etc/" "CHANGELOG.md" ".gitmodules" ".gitignore" "../" "./")
+
+ ("/Users/lborges-atls/projects/reza/resources/public/js/closurified/reza/" (21872 58241 0 0) "whitelist.js" "util.js" "undo.js" "uid.js" "trees.js" "traversing.js" "tinymce-undo-manager.js" "time.js" "telepointers.js" "sync.js" "strings.js" "socket.js" "selections.js" "selection-change.js" "schedule.js" "record.js" "ranges.js" "random.js" "q.js" "path.js" "op_utils.js" "mutation.js" "mutation-observers.js" "model.js" "maps.js" "map-diff.js" "jwt.js" "json.js" "index.js" "identity-key-map.js" "http.js" "global.js" "functions.js" "fast-diff.js" "fast-diff-impl.js" "events.js" "dom.js" "dom-integration.js" "dom-diff.js" "dom-binding.js" "diff-match-patch-custom.js" "debug.js" "content.js" "codec.js" "client.js" "browsers.js" "boundaries.js" "auth.js" "assert.js" "arrays.js" "api.js" "api-helpers.js" "accessor.js" "../" "./")
+
+ ("/Users/lborges-atls/projects/reza/checkouts/ginga/src/ginga/async/" (21878 30576 0 0) "win.cljx" "ping.cljx" "multiplex.cljx" "haywire.cljx" "../" "./")
+
+ ("/Users/lborges-atls/projects/reza/checkouts/ginga/test/ginga/" (21878 30576 0 0) "zip_test.clj" "test_tree.clj" "test_datetime.clj" "test_core.clj" "marshal_test.clj" "jwt_test.clj" "chash_test.clj" "async/" "../" "./")
+
+ ("/Users/lborges-atls/projects/reza/checkouts/ginga/" (21870 33883 0 0) "web/" "test/" "target/" "src/" "ring-korma/" "ring/" "README.md" "project.clj" "pom.xml" "lein-enhance/" "lein-bootstrap/" "doc/" ".gitignore" ".git" "../" "./")
+
+ ("/Users/lborges-atls/projects/projecty/node_modules/react-ace/src/" (21871 62524 0 0) "ace.jsx" "../" "./")
+
+ ("/Users/lborges-atls/projects/reza/profile-resources/" (21676 26861 0 0) "micros/" "../" "./")
+
+ ("/Users/lborges-atls/projects/reza/profile-resources/micros/" (21878 30573 0 0) "service-descriptor.json" "log4j.properties" "../" "./")
+
+ ("/Users/lborges-atls/projects/wikidocs-examples/javascript/" (21878 27814 0 0) "vendor/" "lib/" "index.html" "../" "./")
+
+ ("/Users/lborges-atls/projects/wikidocs-examples/" (21878 27845 0 0) "ruby/" "README.md" "python/" "php/" "LICENSE" "javascript/" "java/" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/lborges-atls/projects/projecty/src/components/Video/" (21872 63464 0 0) "youtube.png" "Video.less" "Video.js" "package.json" "../" "./")
+
+ ("/Users/lborges-atls/projects/projecty/src/components/" (21872 56291 0 0) "Video/" "variables.less" "TextBox/" "Spreadsheet/" "Splash/" "RemoveBlockInput/" "Quote/" "Navigation/" "Image/" "Header/" "Content/" "Code/" "Chart/" "BlockDoc/" "App/" "AddBlockInput/" "../" "./")
+
+ ("/Users/lborges-atls/projects/projecty/src/components/TextBox/" (21872 56273 0 0) "TextBox.less" "TextBox.js" "package.json" "../" "./")
+
+ ("/Users/lborges-atls/projects/projecty/" (21872 59052 0 0) "webpack.config.js" "src/" "README.md" "REACT_STARTER_KIT_LICENSE.txt" "preprocessor.js" "package.json" "node_modules/" "gulpfile.js" "docs/" "build/" ".travis.yml" ".jscsrc" ".gitignore" ".gitattributes" ".git/" ".flowconfig" ".eslintrc" ".editorconfig" ".DS_Store" ".csslintrc" ".csscomb.json" ".babelrc" "../" "./")
+
+ ("/Users/lborges-atls/projects/projecty/node_modules/" (21872 56299 0 0) "webpack/" "url-loader/" "superagent/" "style-loader/" "source-map-support/" "run-sequence/" "react-tools/" "react-chartjs/" "react-ace/" "react/" "psi/" "protractor/" "normalize.css/" "node-libs-browser/" "minimist/" "lodash/" "less-loader/" "less/" "jsx-loader/" "jest-cli/" "jade/" "highlight.js/" "gulp-util/" "gulp-size/" "gulp-rename/" "gulp-load-plugins/" "gulp-if/" "gulp-changed/" "gulp/" "git-push/" "front-matter/" "flux/" "file-loader/" "fastclick/" "express/" "eventemitter3/" "eslint-plugin-react/" "eslint-loader/" "eslint/" "del/" "css-loader/" "classnames/" "chart.js/" "browser-sync/" "brace/" "babyparse/" "babel-loader/" "babel-eslint/" "babel-core/" "babel/" "autoprefixer-loader/" ".bin/" "../" "./")
+
+ ("/Users/lborges-atls/projects/projecty/node_modules/react-ace/" (21871 59335 0 0) "src/" "README.md" "package.json" "node_modules/" "LICENSE" "index.js" "gulpfile.js" "example/" "build/" ".npmignore" ".jshintrc" "../" "./")
+
+ ("/Users/lborges-atls/projects/projecty/node_modules/jsx-loader/" (21871 59331 0 0) "README.md" "package.json" "node_modules/" "index.js" ".npmignore" "../" "./")
+
+ ("/Users/lborges-atls/projects/projecty/src/actions/" (21871 47406 0 0) "DocActions.js" "AppActions.js" ".#DocActions.js" "../" "./")
+
+ ("/Users/lborges-atls/projects/projecty/src/components/Header/" (21871 42741 0 0) "package.json" "logo-small@2x.png" "logo-small.png" "Header.less" "Header.js" "../" "./")
+
+ ("/Users/lborges-atls/projects/projecty/src/api/" (21871 42741 0 0) "query.js" "../" "./")
+
+ ("/Users/lborges-atls/projects/projecty/src/" (21871 42741 0 0) "utils/" "templates/" "stores/" "server.js" "decorators/" "core/" "content/" "constants/" "components/" "assets/" "app.js" "api/" "actions/" "../" "./")
+
+ ("/Users/lborges-atls/projects/reza/src/reza/" (21867 59765 0 0) "xhtml.clj" "vertx.clj" "vertx/" "util.clj" "systems.clj" "serialize.clj" "querydsl/" "logging.clj" "http.clj" "html.clj" "hazelcast_joiner_impl.clj" "hazelcast_joiner.clj" "hazelcast.clj" "event_bus.clj" "dsl.clj" "data_maintenance.clj" "core.clj" "components.clj" "auth.clj" "aleph_cluster.clj" "../" "./")
+
+ ("/Users/lborges-atls/projects/dotfiles/live-packs/" (21676 26626 0 0) "lborges-pack/" "../" "./")
+
+ ("/Users/lborges-atls/projects/shipitXXX/projectX/wd-presence/www/lib/" (21751 45533 0 0) "require.js" "print.js" "jquery.js" "../" "./")
+
+ ("/Users/lborges-atls/projects/shipitXXX/projectX/wd-presence/www/app/" (21751 46103 0 0) "wd-presence.js" "messages.js" "main.js" "../" "./")
+
+ ("/Users/lborges-atls/projects/confluence-collaborative-editor-plugin/src/main/resources/css/" (21685 46556 0 0) "temporary-hacks.css" "share-plugin.css" "collaborative-presence.css" "collaborative-editor.css" "animate.css" "../" "./")
+
+ ("~/projects/transporter/" (21845 43693 0 0) "TechChoices.md" "target/" "src/" "resources/" "README.md" "project.clj" "mods/" "LICENSE" ".gitignore" ".git/" "../" "./")
+
+ ("~/projects/transporter/src/transporter/" (21845 43240 0 0) "vertx.clj" "sockjs.clj" "ring/" "queue/" "core.clj" "components.clj" "async.clj" "../" "./")
+
+ ("/Users/lborges-atls/projects/transporter/" (21845 43693 0 0) "TechChoices.md" "target/" "src/" "resources/" "README.md" "project.clj" "mods/" "LICENSE" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/lborges-atls/projects/transporter/src/transporter/" (21845 43240 0 0) "vertx.clj" "sockjs.clj" "ring/" "queue/" "core.clj" "components.clj" "async.clj" "../" "./")
+
+ ("~/projects/transporter/src/transporter/queue/" (21845 32863 0 0) "sqs.clj" "protocol.clj" "in_memory.clj" "../" "./")
+
+ ("/Users/lborges-atls/projects/transporter/src/transporter/queue/" (21845 32863 0 0) "sqs.clj" "protocol.clj" "in_memory.clj" "../" "./")
+
+ ("/Users/lborges-atls/projects/transporter/resources/public/" (21845 29501 0 0) "app2.html" "app1user2.html" "app1user1.html" "../" "./")
+
+ ("/Users/lborges-atls/projects/package.elm-lang.org/dist/" (21849 42473 0 0) "setup-config" "package.conf.inplace/" "build/" "../" "./")
+
+ ("/Users/lborges-atls/projects/tenacity/test/tenacity/" (21859 51144 0 0) "core_test.clj" "../" "./")
+
+ ("/Users/lborges-atls/projects/tenacity/test/" (21859 51144 0 0) "tenacity/" "../" "./")
+
+ ("/Users/lborges-atls/projects/tenacity/src/tenacity/" (21859 51144 0 0) "core.clj" "../" "./")
+
+ ("/Users/lborges-atls/projects/tenacity/src/" (21859 51144 0 0) "tenacity/" "../" "./")
+
+ ("/Users/lborges-atls/projects/tenacity/" (21859 51144 0 0) "test/" "target/" "src/" "resources/" "README.md" "project.clj" "LICENSE" "doc/" ".lein-repl-history" ".lein-failures" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/lborges-atls/projects/package.elm-lang.org/" (21849 38993 0 0) "run-server.cabal" "native-whitelist.json" "log/" "LICENSE" "frontend/" "elm-stuff/" "elm-package.json" "dist/" "cabal.sandbox.config" "backend/" "assets/" "artifacts/" ".gitignore" ".git/" ".cabal-sandbox/" "../" "./")
+
+ ("/Users/lborges-atls/projects/package.elm-lang.org/backend/" (21849 39114 0 0) "ServeFile.hs" "Routes.hs" "Path.hs" "PackageSummary.hs" "NewPackageList.hs" "NativeWhitelist.hs" "Main.hs" "../" "./")
+
+ ("/Users/lborges-atls/elm/package.elm-lang.org/packages/elm-lang/core/2.0.1/" (21849 34239 0 0) "index.html" "documentation.json" "../" "./")
+
+ ("/Users/lborges-atls/elm/package.elm-lang.org/packages/elm-lang/core/" (21849 33883 0 0) "2.0.1/" "../" "./")
+
+ ("/Users/lborges-atls/elm/package.elm-lang.org/packages/elm-lang/" (21849 33883 0 0) "core/" "../" "./")
+
+ ("/Users/lborges-atls/elm/package.elm-lang.org/packages/" (21849 33883 0 0) "elm-lang/" "../" "./")
+
+ ("/Users/lborges-atls/elm/package.elm-lang.org/" (21849 33971 0 0) "packages/" "assets/" "artifacts/" ".git/" "../" "./")
+
+ ("/Users/lborges-atls/elm/package.elm-lang.org/artifacts/" (21849 34086 0 0) "Page-Package.js" "../" "./")
+
+ ("/Users/lborges-atls/package.elm-lang.org/packages/elm-lang/core/2.0.1/" (21849 33354 0 0) "index.html" "../" "./")
+
+ ("~/projects/transporter/src/transporter/ring/adapter/" (21842 51104 0 0) "vertx.clj" "../" "./")
+
+ ("~/projects/transporter/src/transporter/ring/middleware/" (21841 43000 0 0) "cors.clj" "../" "./")
+
+ ("/Users/lborges-atls/projects/transporter/checkouts/ginga/" (21844 15754 0 0) "web/" "test/" "target/" "src/" "ring-korma/" "ring/" "README.md" "project.clj" "pom.xml" "lein-enhance/" "lein-bootstrap/" "doc/" ".gitignore" ".git" "../" "./")
+
+ ("/Users/lborges-atls/projects/transporter/checkouts/" (21844 14614 0 0) "ginga/" "../" "./")
+
+ ("/Users/lborges-atls/projects/reza/checkouts/" (21676 26859 0 0) "ginga/" "../" "./")
+
+ ("/Users/lborges-atls/projects/dotfiles/live-packs/lborges-pack/config/" (21676 26626 0 0) "bindings.el" ".gitkeep" "../" "./")
+
+ ("/Users/lborges-atls/.live-packs/lborges-pack/config/" (21676 26626 0 0) "bindings.el" ".gitkeep" "../" "./")
+
+ ("/Users/lborges-atls/.live-packs/" (21676 26626 0 0) "lborges-pack/" "../" "./")
+
+ ("/Users/lborges-atls/projects/transporter/src/transporter/ring/" (21841 28154 0 0) "adapter/" "../" "./")
+
+ ("/Users/lborges/.live-packs/lborges-pack/" (21676 24670 0 0) "README.md" "lib/" "init.el_cache/" "init.el" "info.el" "config/" "../" "./")
+
+ ("/Users/lborges-atls/projects/reza/src/reza/vertx/" (21841 20760 0 0) "sockjs.clj" "http.clj" "event_bus.clj" "../" "./")
+
+ ("/Users/lborges-atls/projects/transporter/resources/" (21841 20160 0 0) "public/" "../" "./")
+
+ ("/Users/lborges-atls/projects/reza/docs/algorithms/" (21816 40878 0 0) "simplify.md" "materialize-any.md" "../" "./")
+
+ ("/Users/lborges-atls/projects/reza/target/generated/clj/reza/operation/" (21833 44433 0 0) "types.clj" "transform.clj" "simplify.clj" "protocols.clj" "model.clj" "materialize_any.clj" "materialize.clj" "jupiter.clj" "inverse.clj" "edit.clj" "diff.clj" "delta.clj" "constants.clj" "compose.clj" "affinity.clj" "../" "./")
 )
 
 ;; ----- ido-unc-hosts-cache -----

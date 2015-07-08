@@ -2,6 +2,7 @@ export PATH=/usr/local/bin:$PATH
 export PATH=~/libraries/android-sdk-macosx/tools:$PATH
 export PATH=~/libraries/android-sdk-macosx/platform-tools:$PATH
 export PATH=~/libraries/apache-ant-1.9.4/bin/:$PATH
+export PATH=~/vert.x-2.1.5/bin/:$PATH
 
 export PATH=~/bin:$PATH
 export PATH=~/storm/bin:$PATH
@@ -55,16 +56,18 @@ function gitCommitHistorySearch() {
 
 
 
-# Emacs aliases
+# Emacs aliases / functions
 export ALTERNATE_EDITOR=""
 export EDITOR=emacsclient
 alias emacs='open -a /Applications/Emacs.app $1'
 alias ed='/Applications/Emacs.app/Contents/MacOS/Emacs --daemon'
 alias edk="emacsclient -e '(kill-emacs)'"
 # attach to running daemon
-alias ec='emacsclient -c $1'
+#alias ec='emacsclient -c $1 &'
 # attach to running daemon, but in the terminal
 alias et='emacsclient -nw $1'
+
+function ec() { emacsclient -c "$@" & }
 
 # Blog aliases
 alias blog='cd ~/projects/ruby/octopress'
@@ -94,3 +97,8 @@ export PATH=/usr/local/share/npm/bin:$PATH
 
 ### GPG key management
 eval $(gpg-agent --daemon)
+
+
+parse_git_branch_one() {
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'
+}
