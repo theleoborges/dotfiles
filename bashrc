@@ -17,7 +17,7 @@ export ARCHFLAGS='-arch x86_64'
 
 # scala stuff
 export SBT_OPTS="-XX:MaxPermSize=256M -Xmx1500M"
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_60.jdk/Contents/Home
+#export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_60.jdk/Contents/Home
 
 # rbenv
 export RBENV_ROOT=/usr/local/var/rbenv

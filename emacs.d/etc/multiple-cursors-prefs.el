@@ -4,6 +4,7 @@
 (setq mc/cmds-to-run-for-all
       '(
         c-electric-slash
+        cljr-cycle-coll
         cua-copy-region
         cua-cut-region
         cua-delete-region

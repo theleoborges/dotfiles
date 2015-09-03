@@ -174,15 +174,15 @@
 
 ;;(add-to-list 'load-path "~/libraries/ensime-latest/elisp")
 ;;(add-to-list 'load-path "~/libraries/ensime-emacs")
-(require 'ensime)
-(add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
-(eval-after-load 'ensime
-  '((lambda ()
-      (define-key ensime-mode-map (kbd "C-c C-r") 'ensime-inf-eval-region)
-      (define-key ensime-mode-map (kbd "C-x C-e") 'ensime-inf-eval-definition)
-      (define-key ensime-mode-map (kbd "C-c C-l") 'ensime-inf-load-file)
-      (define-key ensime-mode-map (kbd "C-c C-b i") 'ensime-import-type-at-point)
-      )))
+;; (require 'ensime)
+;; (add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
+;; (eval-after-load 'ensime
+;;   '((lambda ()
+;;       (define-key ensime-mode-map (kbd "C-c C-r") 'ensime-inf-eval-region)
+;;       (define-key ensime-mode-map (kbd "C-x C-e") 'ensime-inf-eval-definition)
+;;       (define-key ensime-mode-map (kbd "C-c C-l") 'ensime-inf-load-file)
+;;       (define-key ensime-mode-map (kbd "C-c C-b i") 'ensime-import-type-at-point)
+;;       )))
 
 
 ;;
@@ -196,11 +196,6 @@
   "Prevent y-or-n-p from activating a dialog"
   (let ((use-dialog-box nil))
     ad-do-it))
-
-;; (setq url-proxy-services
-;;    '(("no_proxy" . "^\\(localhost\\|10.*\\)")
-;;      ("http" . "127.0.0.1:3128")
-;;      ("https" . "127.0.0.1:3128")))
 
 (setq debug-on-error t)
 
@@ -219,3 +214,5 @@
 
 (define-key minibuffer-local-completion-map (kbd "C-n") 'cycle-mini-next-completion)
 (define-key minibuffer-local-completion-map (kbd "C-p") 'cycle-mini-previous-completion)
+
+(load-theme 'monokai t)
