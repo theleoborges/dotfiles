@@ -208,11 +208,23 @@
 
 
 ;; minibuffer
-(lookup-key minibuffer-local-filename-must-match-map (kbd "<right>"))
-(lookup-key minibuffer-local-filename-completion-map (kbd "<right>"))
-(lookup-key (current-global-map) (kbd "<right>"))
+;; (lookup-key minibuffer-local-filename-must-match-map (kbd "<right>"))
+;; (lookup-key minibuffer-local-filename-completion-map (kbd "<right>"))
+;; (lookup-key (current-global-map) (kbd "<right>"))
 
-(define-key minibuffer-local-completion-map (kbd "C-n") 'cycle-mini-next-completion)
-(define-key minibuffer-local-completion-map (kbd "C-p") 'cycle-mini-previous-completion)
+;; (define-key minibuffer-local-completion-map (kbd "C-n") 'cycle-mini-next-completion)
+;; (define-key minibuffer-local-completion-map (kbd "C-p") 'cycle-mini-previous-completion)
 
-(load-theme 'monokai t)
+;; cider
+(setq cider-test-infer-test-ns (lambda (ns) ns))
+
+;; Buffers
+(defun switch-to-messages-buffer ()
+  (interactive)
+  (switch-to-buffer "*Messages*"))
+
+(global-set-key (kbd "C-c C-s") 'switch-to-messages-buffer)
+
+
+;; Purescript
+(add-hook 'purescript-mode-hook 'turn-on-purescript-indentation)
