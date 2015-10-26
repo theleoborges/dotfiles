@@ -27,6 +27,8 @@
 (require 'projectile)
 (projectile-global-mode)
 
+
+
 ;; Load bindings config
 (live-load-config-file "bindings.el")
 (setq live-disable-zone t)
@@ -228,3 +230,7 @@
 
 ;; Purescript
 (add-hook 'purescript-mode-hook 'turn-on-purescript-indentation)
+
+
+;; Projectile
+(global-set-key (kbd "C-c p s a") 'projectile-ag)
