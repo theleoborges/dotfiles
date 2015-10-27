@@ -9,7 +9,6 @@ export PATH=~/storm/bin:$PATH
 export PATH=/Applications/Emacs.app/Contents/MacOS/bin:$PATH
 export PATH=~/frameworks/scala-latest/bin:$PATH
 export PATH=/usr/local/share/npm/bin:$PATH
-export PATH=~/.cabal/bin:$PATH
 
 
 export EDITOR=subl

@@ -11,7 +11,6 @@
     ("05c3bc4eb1219953a4f182e10de1f7466d28987f48d647c01f1f0037ff35ab9a" default)))
  '(fci-rule-color "#49483E")
  '(haskell-notify-p t)
- '(haskell-process-type (quote ghci))
  '(haskell-stylish-on-save t)
  '(haskell-tags-on-save t)
  '(highlight-changes-colors ("#FD5FF0" "#AE81FF"))
