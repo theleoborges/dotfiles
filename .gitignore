@@ -6,6 +6,7 @@ emacs.d/.project-roots
 emacs.d/.smex-items
 emacs.d/places
 emacs.d/projectile-bookmarks.eld
+emacs.d/ido.last
 
 # IntelliJ, RubyMine
 .idea/
