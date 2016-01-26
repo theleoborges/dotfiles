@@ -247,3 +247,8 @@
   '(haskell-process-log t))
 
 (custom-set-variables '(haskell-process-type 'stack-ghci))
+
+
+;; Enable custom theme
+(package-initialize)
+(load-theme 'spacemacs-dark t)
