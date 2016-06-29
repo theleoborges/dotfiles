@@ -102,3 +102,8 @@ eval $(gpg-agent --daemon)
 parse_git_branch_one() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'
 }
+
+
+# utils
+# list files sorted by size
+# find . -type f -print0 | xargs -0 ls -l | sort -k5,5rn
