@@ -59,6 +59,9 @@ This function is called at the very startup of Spacemacs initialization
 before layers configuration.
 You should not put any user code in there besides modifying the variable
 values."
+  (setq url-proxy-services
+      '(("http" . "127.0.0.1:3128")
+        ("https" . "127.0.0.1:3128")))
   ;; This setq-default sexp is an exhaustive list of all the supported
   ;; spacemacs settings.
   (setq-default
@@ -68,7 +71,7 @@ values."
    ;; This variable has no effect if Emacs is launched with the parameter
    ;; `--insecure' which forces the value of this variable to nil.
    ;; (default t)
-   dotspacemacs-elpa-https t
+   dotspacemacs-elpa-https nil
    ;; Maximum allowed time in seconds to contact an ELPA repository.
    dotspacemacs-elpa-timeout 5
    ;; If non nil then spacemacs will check for updates at startup
@@ -275,7 +278,7 @@ you should place your code here."
 
   ;; Expand Region
   (global-set-key (kbd "C-=") 'er/expand-region)
-  (global-set-key (kbd "C--") 'er/contract-region)  
+  (global-set-key (kbd "C--") 'er/contract-region)
 
   ;; Paredit
   (add-hook 'lisp-mode-hook             #'enable-paredit-mode)
