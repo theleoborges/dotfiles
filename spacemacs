@@ -285,6 +285,27 @@ you should place your code here."
   (add-hook 'lisp-interaction-mode-hook #'enable-paredit-mode)
   (add-hook 'clojure-mode-hook          #'enable-paredit-mode)
 
+  (defun duplicate-line ()
+    (interactive)
+    (move-beginning-of-line 1)
+    (kill-line)
+    (yank)
+    (open-line 1)
+    (next-line 1)
+    (yank))
+  (global-set-key (kbd "C-c d") 'duplicate-line)
+
+  (defun paredit-duplicate-custom ()
+    (interactive)
+    (paredit-kill)
+    (yank)
+    (yank)
+    (backward-char)
+    (paredit-backward-up)
+    (open-line 1))
+  (global-set-key (kbd "C-c D")   'paredit-duplicate-custom)
+
+
 
   ;; Helm projectile
   (global-set-key (kbd "M-m p s s") 'helm-projectile-ag)
@@ -303,6 +324,16 @@ you should place your code here."
     (switch-to-buffer "*Messages*"))
 
   (global-set-key (kbd "C-c C-s") 'switch-to-messages-buffer)
+
+
+  ;; Kill-ring
+  (global-set-key (kbd "M-y") 'helm-show-kill-ring)
+
+  ;; neotree
+  (require 'neotree)
+  (global-set-key [f8] 'neotree-toggle)
+  (global-set-key [f9] 'neotree-dir)
+
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
