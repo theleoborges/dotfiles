@@ -23,6 +23,9 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home
 export RBENV_ROOT=/usr/local/var/rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
+# homebrew
+export PATH=/usr/local/sbin:$PATH
+
 # Rails aliases
 alias rc='rails console'
 alias rg='rails generate'
@@ -107,3 +110,6 @@ parse_git_branch_one() {
 # utils
 # list files sorted by size
 # find . -type f -print0 | xargs -0 ls -l | sort -k5,5rn
+
+alias simpleserver="python -m SimpleHTTPServer"
+
