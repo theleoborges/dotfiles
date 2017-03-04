@@ -56,3 +56,4 @@ Backup[ ]of[ ]*.numbers/
 
 #nodejs
 node_modules
+emacs.d/tmp
