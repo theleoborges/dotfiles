@@ -18,6 +18,20 @@ values."
    ;; of a list then all discovered layers will be installed.
    dotspacemacs-configuration-layers
    '(
+     rust
+     fsharp
+     go
+     csv
+     python
+     html
+     ruby
+     elixir
+     javascript
+     sql
+     php
+     graphviz
+     yaml
+     octave
      ;; ----------------------------------------------------------------
      ;; Example of useful layers you may want to use right away.
      ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
@@ -38,7 +52,7 @@ values."
      clojure
      elm
      haskell
-     leos-emacs-config
+     ;leos-emacs-config
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
@@ -59,9 +73,7 @@ This function is called at the very startup of Spacemacs initialization
 before layers configuration.
 You should not put any user code in there besides modifying the variable
 values."
-  (setq url-proxy-services
-      '(("http" . "127.0.0.1:3128")
-        ("https" . "127.0.0.1:3128")))
+  (setq url-proxy-services nil)
   ;; This setq-default sexp is an exhaustive list of all the supported
   ;; spacemacs settings.
   (setq-default
@@ -260,7 +272,8 @@ This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
 
-  (setq clojure-enable-fancify-symbols t)
+  ;(setq clojure-enable-fancify-symbols t)
+  (setq js-indent-level 2)
 
   ;; Faster buffer navigation
   (eval-after-load 'paredit
@@ -354,6 +367,14 @@ you should place your code here."
                 100)
            '(85 . 50) '(100 . 100)))))
   (global-set-key (kbd "C-c t") 'toggle-transparency)
+
+
+  ;; Trying to fix CPU hogging issues
+  ;; suggested here: https://github.com/syl20bnr/spacemacs/issues/9409
+  (setq history-length 100)
+  (put 'minibuffer-history 'history-length 50)
+  (put 'evil-ex-history 'history-length 50)
+  (put 'kill-ring 'history-length 25)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
@@ -363,10 +384,17 @@ you should place your code here."
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(ansi-color-faces-vector
+   [default default default italic underline success warning error])
+ '(custom-safe-themes
+   (quote
+    ("bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" "fa2b58bb98b62c3b8cf3b6f02f058ef7827a8e497125de0254f56e373abee088" default)))
+ '(evil-want-Y-yank-to-eol t)
  '(package-selected-packages
    (quote
-    (ensime ws-butler window-numbering which-key volatile-highlights vi-tilde-fringe use-package spacemacs-theme spaceline smooth-scrolling shm restart-emacs rainbow-delimiters quelpa popwin persp-mode pcre2el paradox page-break-lines open-junk-file neotree move-text mmm-mode markdown-toc macrostep lorem-ipsum linum-relative leuven-theme info+ indent-guide ido-vertical-mode hungry-delete hl-todo hindent highlight-parentheses highlight-numbers highlight-indentation help-fns+ helm-themes helm-swoop helm-projectile helm-mode-manager helm-make helm-flyspell helm-flx helm-descbinds helm-company helm-c-yasnippet helm-ag haskell-snippets google-translate golden-ratio gh-md flx-ido fill-column-indicator fancy-battery expand-region exec-path-from-shell evil-visualstar evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state evil-indent-plus evil-iedit-state evil-exchange evil-escape evil-args evil-anzu elm-mode elisp-slime-nav define-word company-statistics company-quickhelp company-ghc company-cabal cmm-mode clj-refactor clean-aindent-mode cider-eval-sexp-fu buffer-move bracketed-paste auto-yasnippet auto-highlight-symbol auto-dictionary auto-compile aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line ac-ispell)))
- '(safe-local-variable-values (quote ((js-indent-level . 4)))))
+    (toml-mode racer cargo rust-mode diminish htmlize pos-tip fsharp-mode go-guru go-eldoc company-go go-mode csv-mode winum unfill fuzzy flycheck-credo dired+ csharp-mode cmake-mode auto-complete-clang ace-jump-mode yapfify pyvenv pytest pyenv-mode py-isort pip-requirements live-py-mode hy-mode helm-pydoc cython-mode company-anaconda anaconda-mode pythonic web-mode tagedit slim-mode scss-mode sass-mode pug-mode less-css-mode helm-css-scss haml-mode emmet-mode company-web web-completion-data rvm ruby-tools ruby-test-mode rubocop rspec-mode robe rbenv rake minitest chruby bundler inf-ruby ob-elixir alchemist org flycheck-mix elixir-mode solidity-mode web-beautify livid-mode skewer-mode simple-httpd json-mode json-snatcher json-reformat js2-refactor js2-mode js-doc company-tern dash-functional tern coffee-mode sql-indent phpunit phpcbf php-extras php-auto-yasnippets drupal-mode php-mode graphviz-dot-mode yaml-mode scala-mode uuidgen toc-org powerline request org-plus-contrib org-bullets mwim markdown-mode link-hint intero flycheck hlint-refactor hide-comnt projectile helm-hoogle flyspell-correct-helm flyspell-correct eyebrowse evil-visual-mark-mode evil-unimpaired iedit evil-ediff anzu dumb-jump f company-ghci column-enforce-mode clojure-snippets hydra inflections multiple-cursors s cider seq spinner clojure-mode bind-key yasnippet packed avy auto-complete company highlight smartparens dash bind-map evil undo-tree haskell-mode helm helm-core async package-build ensime ws-butler window-numbering which-key volatile-highlights vi-tilde-fringe use-package spacemacs-theme spaceline smooth-scrolling shm restart-emacs rainbow-delimiters quelpa popwin persp-mode pcre2el paradox page-break-lines open-junk-file neotree move-text mmm-mode markdown-toc macrostep lorem-ipsum linum-relative leuven-theme info+ indent-guide ido-vertical-mode hungry-delete hl-todo hindent highlight-parentheses highlight-numbers highlight-indentation help-fns+ helm-themes helm-swoop helm-projectile helm-mode-manager helm-make helm-flyspell helm-flx helm-descbinds helm-company helm-c-yasnippet helm-ag haskell-snippets google-translate golden-ratio gh-md flx-ido fill-column-indicator fancy-battery expand-region exec-path-from-shell evil-visualstar evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state evil-indent-plus evil-iedit-state evil-exchange evil-escape evil-args evil-anzu elm-mode elisp-slime-nav define-word company-statistics company-quickhelp company-ghc company-cabal cmm-mode clj-refactor clean-aindent-mode cider-eval-sexp-fu buffer-move bracketed-paste auto-yasnippet auto-highlight-symbol auto-dictionary auto-compile aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line ac-ispell)))
+ '(ring-bell-function (quote ignore))
+ '(safe-local-variable-values (quote ((js-indent-level . 2)))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

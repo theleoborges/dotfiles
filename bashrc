@@ -9,7 +9,7 @@ export PATH=~/storm/bin:$PATH
 export PATH=/Applications/Emacs.app/Contents/MacOS/bin:$PATH
 export PATH=~/frameworks/scala-latest/bin:$PATH
 export PATH=/usr/local/share/npm/bin:$PATH
-
+export PATH=~/Library/Python/3.7/bin:$PATH
 
 export EDITOR=subl
 export ARCHFLAGS='-arch x86_64'
@@ -20,8 +20,7 @@ export SBT_OPTS="-XX:MaxPermSize=256M -Xmx1500M"
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home
 
 # rbenv
-export RBENV_ROOT=/usr/local/var/rbenv
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+eval "$(rbenv init -)"
 
 # homebrew
 export PATH=/usr/local/sbin:$PATH
@@ -46,6 +45,7 @@ alias gp='git push'
 alias gpo='git push origin'
 alias gpom='git push origin master'
 alias gphm='git push heroku master'
+alias gpob='git rev-parse --abbrev-ref HEAD | xargs git push origin'
 alias gdm='git diff | mate'
 alias gsci='git show --pretty="format:" --name-only'
 alias gclean="git clean -f -d"
@@ -113,3 +113,5 @@ parse_git_branch_one() {
 
 alias simpleserver="python -m SimpleHTTPServer"
 
+# elixir
+export ERL_AFLAGS="-kernel shell_history enabled"
